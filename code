@@ -1,0 +1,18 @@
+message = input("<")
+words = message.split(' ')
+emoji = {
+    ":(" : "☹",
+    ":)" : "😁",
+    ";)" : "😉",
+    ">_<" : "😆",
+    "-_-" : "😑",
+    "<3" : "❤",
+    "+_+":"😰",
+    "^0^":"🙄",
+    "ಥ_ಥ":"😭"
+}
+output = ""
+for word in words:
+    output += emoji.get(word,word)+" "
+print(output)
+
